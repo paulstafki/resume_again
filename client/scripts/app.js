@@ -1,13 +1,12 @@
 $(document).ready(function(){
-    $('body').append("<button id='clickyButton'>Click ME!</button>");
+    $("main").prepend("<button id='clickyButton'>Resume?</button>");
 
-    $("body").on('click', '#clickyButton', function(){
-        console.log("clickyButton clicked!");
-        $.ajax({
-            url: "/data-request",
-            success: function(data){
-                console.log(data.message);
-            }
-        });
+    $("#clickyButton").click(function(){
+        $("#hidey").slideDown();
+        $("#clickyButton").hide();
+    });
+    $("#hidey").click(function(){
+        $("#hidey").slideUp();
+        $("#clickyButton").show();
     });
 });
