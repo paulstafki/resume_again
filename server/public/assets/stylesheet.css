@@ -86,11 +86,16 @@ li {
     text-shadow: 3px 3px 8px #000000;
 }
 
-.wrap { 
+.wrap {
+    display: none;
     width: 920px;
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.showHeading {
+    display: none;
 }
 
 .showEducation {
@@ -101,11 +106,22 @@ li {
     display: none
 }
 
-.showHeading {
-    display: none;
-}
-
 .clickHeading h1 {
     padding-top: 10px;
     padding-bottom: 5px;
+}
+
+#clickyButton {
+    box-shadow: 0px 0px 4px 0px #3dc21b;
+    background-color:#1a1a1a;
+    border-radius:15px;
+    border:1px solid #FFFFFF;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:12px;
+    padding:4px 4px;
+    text-decoration:none;
+    text-shadow:2px 1px 5px #8DC68D;
 }

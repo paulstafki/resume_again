@@ -1,5 +1,8 @@
 $(document).ready(function(){
-
+    $('main').append("<button id='clickyButton'>Resume?</button>");
+    $("#clickyButton").click(function(){
+        $(".wrap").slideToggle(2000);
+    });
     $(".clickHeading").click(function(){
         $(".showHeading").slideDown(2000);
         $(".clickHeading").hide();
