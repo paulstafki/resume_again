@@ -1,12 +1,17 @@
 $(document).ready(function(){
-    $("main").prepend("<button id='clickyButton'>Resume?</button>");
 
-    $("#clickyButton").click(function(){
-        $("#hidey").slideDown();
-        $("#clickyButton").hide();
+    $(".clickHeading").click(function(){
+        $(".showHeading").slideDown(2000);
+        $(".clickHeading").hide();
     });
-    $("#hidey").click(function(){
-        $("#hidey").slideUp();
-        $("#clickyButton").show();
+    $(".showHeading").click(function(){
+        $(".showHeading").slideUp(2000);
+        $(".clickHeading").show();
+    });
+    $(".clickEducation").click(function(){
+        $(".showEducation").slideToggle(2000);
+    });
+    $(".clickExperience").click(function(){
+        $(".showExperience").slideToggle(2000);
     });
 });
